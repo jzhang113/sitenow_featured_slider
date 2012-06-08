@@ -1,0 +1,10 @@
+name = SiteNow Featured Slider Content
+description = Demo content for Sitenow Featured Slider
+core = 7.x
+package = SiteNow Content
+version = 7.x-1.0
+project = sitenow_featured_slider_content
+features[content][] = featured_slider_1
+features[content][] = featured_slider_2
+features[features_api][] = api:1
+project status url = http://dev.sitenow.uiowa.edu/features/fserver

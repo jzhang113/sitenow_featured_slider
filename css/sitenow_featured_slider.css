@@ -1,0 +1,78 @@
+.view-featured-slider .views-field-field-featured-slider-image a {
+  display:block;
+  line-height:0;
+}
+.view-featured-slider .skin-default {
+  position:relative;
+  padding:3px;
+  background:#ededed;
+  border:1px solid #dddddd;
+}
+.view-featured-slider .views_slideshow_cycle_main { border:1px solid #dddddd; }
+.view-featured-slider .views_slideshow_cycle_main, .view-featured-slider .views-slideshow-cycle-main-frame, .view-featured-slider .views-slideshow-cycle-main-frame-row, .view-featured-slider .views-slideshow-cycle-main-frame-row-item {
+  width:100% !important;
+  max-width:100%;
+  overflow:hidden;
+}
+.view-featured-slider .views-slideshow-cycle-main-frame-row-item { position:relative; }
+.view-featured-slider .views-slideshow-cycle-main-frame-row-item .views-field-title {
+  position:absolute;
+  width:100%;
+  background-color:rgba(0,0,0,0.7);
+  padding:.5em;
+  bottom:0;
+}
+.view-featured-slider .views-slideshow-cycle-main-frame-row-item .views-field-title a { color:#ffce34; }
+.view-featured-slider .views-slideshow-cycle-main-frame-row-item .views-field-field-featured-slider-image img { width:100%; }
+.view-featured-slider .views-slideshow-controls-bottom {
+  padding:.5em;
+  background:#ffffff;
+  -webkit-box-shadow:inset 0px -5px 30px rgba(0,0,0,0.1);
+  -moz-box-shadow:inset 0px -5px 30px rgba(0,0,0,0.1);
+  box-shadow:inset 0px -5px 30px rgba(0,0,0,0.1);
+  border:1px solid #dddddd;
+  margin-top:3px;
+}
+.view-featured-slider .views_slideshow_controls_text { margin:0 auto; }
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a {
+  text-indent:-9999px;
+  font-size:1em;
+  line-height:0;
+  background-image:url(images/slider-controls.png);
+  background-repeat:no-repeat;
+  width:20px;
+  height:20px;
+  display:block;
+  margin-top:-1.4em;
+  -webkit-transition:background .5s ease;
+  -moz-transition:background .5s ease;
+  -o-transition:background .5s ease;
+  transition:background .5s ease;
+}
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:hover, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:focus, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:active, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:hover, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:focus, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:active, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:hover, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:focus, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:active { background-color:#7ab4e7; }
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
+  background-position:0 0;
+  float:left;
+}
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a { display:none; }
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a {
+  background-position:0 -20px;
+  float:right;
+}
+.view-featured-slider .views-slideshow-pager-fields { text-align:center; }
+.view-featured-slider .views-slideshow-pager-fields .views-slideshow-pager-field-item { display:inline; }
+.view-featured-slider .views-slideshow-pager-fields .views-slideshow-pager-field-item .views-field-counter { display:inline-block; }
+.view-featured-slider .views-slideshow-pager-fields .views-slideshow-pager-field-item .views-content-counter {
+  display:inline-block;
+  text-indent:-9999px;
+  font-size:1em;
+  line-height:0;
+  height:5px;
+  width:5px;
+  background-color:#333333;
+  background-color:rgba(0,0,0,0.3);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+.view-featured-slider .views-slideshow-pager-fields .active .views-content-counter { background-color:#1f69a9; }
