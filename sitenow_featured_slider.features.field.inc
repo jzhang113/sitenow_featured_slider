@@ -10,85 +10,7 @@
 function sitenow_featured_slider_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-featured_slider-body'
-  $fields['node-featured_slider-body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '1',
-      'type' => 'text_with_summary',
-    ),
-    'field_instance' => array(
-      'bundle' => 'featured_slider',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '1',
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'body',
-      'label' => 'Body',
-      'required' => FALSE,
-      'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'module' => 'text',
-        'settings' => array(
-          'rows' => 20,
-          'summary_rows' => 5,
-        ),
-        'type' => 'text_textarea_with_summary',
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-featured_slider-field_featured_slider_image'
+  // Exported field: 'node-featured_slider-field_featured_slider_image'.
   $fields['node-featured_slider-field_featured_slider_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -109,6 +31,7 @@ function sitenow_featured_slider_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -151,6 +74,7 @@ function sitenow_featured_slider_field_default_fields() {
       'required' => 1,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => 'featured_slider',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -185,10 +109,94 @@ function sitenow_featured_slider_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-featured_slider-field_featured_slider_link'.
+  $fields['node-featured_slider-field_featured_slider_link'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_featured_slider_link',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'featured_slider',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Provide a URL for this content to link to.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => 2,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_featured_slider_link',
+      'label' => 'Link',
+      'required' => 1,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'none',
+        'title_maxlength' => '128',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '31',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Image');
+  t('Link');
+  t('Provide a URL for this content to link to.');
   t('Upload an image to display on the Featured Slider');
 
   return $fields;

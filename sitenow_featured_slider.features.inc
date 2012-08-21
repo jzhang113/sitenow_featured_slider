@@ -27,7 +27,7 @@ function sitenow_featured_slider_views_api() {
 function sitenow_featured_slider_image_default_styles() {
   $styles = array();
 
-  // Exported image style: featured_slider
+  // Exported image style: featured_slider.
   $styles['featured_slider'] = array(
     'name' => 'featured_slider',
     'effects' => array(
