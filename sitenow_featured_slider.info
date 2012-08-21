@@ -13,7 +13,6 @@ dependencies[] = manualcrop
 dependencies[] = options
 dependencies[] = sitenow_core
 dependencies[] = strongarm
-dependencies[] = taxonomy
 dependencies[] = views
 dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
