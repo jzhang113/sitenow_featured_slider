@@ -6,4 +6,4 @@
 
 include_once 'sitenow_featured_slider.features.inc';
 
-drupal_add_css(drupal_get_path('module', 'sitenow_featured_slider') . '/css/sitenow_featured_slider.css');
+drupal_add_css(drupal_get_path('module', 'sitenow_featured_slider') . '/theme/css/sitenow_featured_slider.css');
