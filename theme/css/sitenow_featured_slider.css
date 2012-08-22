@@ -4,38 +4,36 @@
  *
  * - styles related for basic theming of sitenow_featured_slider. Color and other customizations should take place at a higher level
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000314}}
 .view-featured-slider .views-field-field-featured-slider-image a {
   display: block;
   line-height: 0;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000318}}
 .view-featured-slider .skin-default {
   position: relative;
   padding: 3px;
   background: #ededed;
   border: 1px solid #dddddd;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000324}}
 .view-featured-slider .views_slideshow_cycle_main {
   border: 1px solid #dddddd;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000323}}
-.view-featured-slider .views_slideshow_cycle_main, .view-featured-slider .views-slideshow-cycle-main-frame, .view-featured-slider .views-slideshow-cycle-main-frame-row, .view-featured-slider .views-slideshow-cycle-main-frame-row-item {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000328}}
+.view-featured-slider .views_slideshow_cycle_main,
+.view-featured-slider .views-slideshow-cycle-main-frame,
+.view-featured-slider .views-slideshow-cycle-main-frame-row,
+.view-featured-slider .views-slideshow-cycle-main-frame-row-item {
   width: 100% !important;
   max-width: 100%;
   overflow: hidden;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000333}}
 .view-featured-slider .views-slideshow-cycle-main-frame-row-item {
   position: relative;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000336}}
 .view-featured-slider .views-slideshow-cycle-main-frame-row-item .views-field-title {
   position: absolute;
   width: 100%;
@@ -43,18 +41,15 @@
   padding: .5em;
   bottom: 0;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000343}}
 .view-featured-slider .views-slideshow-cycle-main-frame-row-item .views-field-title a {
   color: #ffce34;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000344}}
 .view-featured-slider .views-slideshow-cycle-main-frame-row-item .views-field-field-featured-slider-image img {
   width: 100%;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000347}}
 .view-featured-slider .views-slideshow-controls-bottom {
   padding: .5em;
   background: #ffffff;
@@ -64,14 +59,14 @@
   border: 1px solid #dddddd;
   margin-top: 3px;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000357}}
 .view-featured-slider .views_slideshow_controls_text {
   margin: 0 auto;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000348}}
-.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000361}}
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a {
   text-indent: -9999px;
   font-size: 1em;
   line-height: 0;
@@ -86,45 +81,45 @@
   -o-transition: background .5s ease;
   transition: background .5s ease;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000363}}
-.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:hover, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:focus, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:active, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:hover, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:focus, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:active, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:hover, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:focus, .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:active {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000384}}
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:hover,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:focus,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a:active,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:hover,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:focus,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a:active,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:hover,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:focus,
+.view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a:active {
   background-color: #7ab4e7;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000388}}
 .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
   background-position: 0 0;
   float: left;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000392}}
 .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-pause a {
   display: none;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000393}}
 .view-featured-slider .views_slideshow_controls_text .views-slideshow-controls-text-next a {
   background-position: 0 -20px;
   float: right;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000399}}
 .view-featured-slider .views-slideshow-pager-fields {
   text-align: center;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\00003102}}
 .view-featured-slider .views-slideshow-pager-fields .views-slideshow-pager-field-item {
   display: inline;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\00003103}}
 .view-featured-slider .views-slideshow-pager-fields .views-slideshow-pager-field-item .views-field-counter {
   display: inline-block;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\00003104}}
 .view-featured-slider .views-slideshow-pager-fields .views-slideshow-pager-field-item .views-content-counter {
   display: inline-block;
   text-indent: -9999px;
@@ -138,8 +133,7 @@
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\00003117}}
 .view-featured-slider .views-slideshow-pager-fields .active .views-content-counter {
   background-color: #1f69a9;
 }
