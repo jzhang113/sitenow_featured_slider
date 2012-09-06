@@ -5,6 +5,7 @@ package = SiteNow Content
 php = 5.2.4
 version = 7.x-1.0
 project = sitenow_featured_slider_content
+dependencies[] = sitenow_featured_slider
 features[content][] = featured_slider_1
 features[content][] = featured_slider_2
 features[features_api][] = api:1
