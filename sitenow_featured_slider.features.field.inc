@@ -42,6 +42,7 @@ function sitenow_featured_slider_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'featured_slider',
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Upload an image to display on the Featured Slider',
       'display' => array(
@@ -85,13 +86,23 @@ function sitenow_featured_slider_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'manualcrop',
+        'module' => 'image',
         'settings' => array(
           'crop_info' => 1,
           'default_crop_area' => 1,
           'inline_crop' => 0,
           'instant_crop' => 0,
           'instant_preview' => 0,
+          'manualcrop_crop_info' => TRUE,
+          'manualcrop_default_crop_area' => TRUE,
+          'manualcrop_enable' => FALSE,
+          'manualcrop_inline_crop' => FALSE,
+          'manualcrop_instant_crop' => FALSE,
+          'manualcrop_instant_preview' => TRUE,
+          'manualcrop_require_cropping' => array(),
+          'manualcrop_styles_list' => array(),
+          'manualcrop_styles_mode' => 'exclude',
+          'manualcrop_thumblist' => FALSE,
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
           'require_cropping' => array(
@@ -103,7 +114,7 @@ function sitenow_featured_slider_field_default_fields() {
           'styles_mode' => 'include',
           'thumblist' => 0,
         ),
-        'type' => 'manualcrop_image',
+        'type' => 'image_image',
         'weight' => '2',
       ),
     ),
