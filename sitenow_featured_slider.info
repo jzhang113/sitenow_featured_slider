@@ -15,6 +15,7 @@ dependencies[] = override_node_options
 dependencies[] = sitenow_core
 dependencies[] = strongarm
 dependencies[] = views
+dependencies[] = views_content
 dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
 features[ctools][] = strongarm:strongarm:1
