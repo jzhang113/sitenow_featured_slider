@@ -14,9 +14,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['create featured_slider content'] = array(
     'name' => 'create featured_slider content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['delete any featured_slider content'] = array(
     'name' => 'delete any featured_slider content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['delete own featured_slider content'] = array(
     'name' => 'delete own featured_slider content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['edit any featured_slider content'] = array(
     'name' => 'edit any featured_slider content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['edit own featured_slider content'] = array(
     'name' => 'edit own featured_slider content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'node',
   );
@@ -69,9 +69,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['enter featured_slider revision log entry'] = array(
     'name' => 'enter featured_slider revision log entry',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -80,8 +80,8 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['override featured_slider authored by option'] = array(
     'name' => 'override featured_slider authored by option',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'webmaster',
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -90,8 +90,8 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['override featured_slider authored on option'] = array(
     'name' => 'override featured_slider authored on option',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'webmaster',
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -100,8 +100,8 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['override featured_slider promote to front page option'] = array(
     'name' => 'override featured_slider promote to front page option',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'webmaster',
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -110,9 +110,9 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['override featured_slider published option'] = array(
     'name' => 'override featured_slider published option',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'webmaster',
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'override_node_options',
   );
@@ -121,7 +121,7 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['override featured_slider revision option'] = array(
     'name' => 'override featured_slider revision option',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'override_node_options',
   );
@@ -130,7 +130,7 @@ function sitenow_featured_slider_user_default_permissions() {
   $permissions['override featured_slider sticky option'] = array(
     'name' => 'override featured_slider sticky option',
     'roles' => array(
-      0 => 'administrator',
+      'administrator' => 'administrator',
     ),
     'module' => 'override_node_options',
   );
