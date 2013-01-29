@@ -9,7 +9,7 @@ function sitenow_featured_slider_content_install() {
   foreach ($migrations as $machine_name => $migration) {
     if($machine_name == "SiteNowFeaturedSlider") {
       // Create an operation for the Batch API
-      $operations[] = array('_sitenow_featured_slider_content_import', array($machine_name, t('Importing content.')));
+      $operations[] = array('_sitenow_content_import', array($machine_name, t('Importing content.')));
     }
   }
 
