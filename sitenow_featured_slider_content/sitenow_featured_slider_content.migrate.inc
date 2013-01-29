@@ -56,11 +56,11 @@ class SiteNowFeaturedSliderMigration extends Migration {
     // We map the filename (relative to the source_dir below) to the field itself.
     $this->addFieldMapping('field_featured_slider_image', 'image');
     // Here we specify the directory containing the source files.
-    $this->addFieldMapping('field_image:source_dir')
+    $this->addFieldMapping('field_featured_slider_image:source_dir')
          ->defaultValue(drupal_get_path('module', 'sitenow_featured_slider_content') . "/import");
     // And we map the alt and title values in the database to those on the image.
-    $this->addFieldMapping('field_image:alt', 'image_alt');
-    $this->addFieldMapping('field_image:title', 'image_title');
+    $this->addFieldMapping('field_featured_slider_image:alt', 'image_alt');
+    $this->addFieldMapping('field_featured_slider_image:title', 'image_title');
 
     // Author mapping. Defaults to user 1.
     $this->addFieldMapping('uid', 'uid')->defaultValue(1);
