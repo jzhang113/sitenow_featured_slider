@@ -5,4 +5,5 @@ package = SiteNow Content
 php = 5.2.4
 version = 7.x-1.0
 project = sitenow_featured_slider_content
+dependencies[] = sitenow_featured_slider
 files[] = sitenow_featured_slider_content.migrate.inc
