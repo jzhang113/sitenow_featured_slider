@@ -65,6 +65,7 @@ class SiteNowFeaturedSliderMigration extends Migration {
     // Author mapping. Defaults to user 1.
     $this->addFieldMapping('uid', 'uid')->defaultValue(1);
     $this->addFieldMapping('is_new', 'is_new')->defaultValue(TRUE);
+    $this->addFieldMapping('promote', 'promote')->defaultValue(TRUE);
   }
 
   // Function for the CSV document
