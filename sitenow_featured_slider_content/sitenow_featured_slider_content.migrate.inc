@@ -69,7 +69,7 @@ class SiteNowFeaturedSliderMigration extends Migration {
 
   // Function for the CSV document
   function csvcolumns() {
-    // Title", "Path", "Body"
+    // Title", "Link", "Image"
     $columns[0] = array('nid', 'nid');
     $columns[1] = array('title', 'Title');
     $columns[2] = array('link', 'Link');
