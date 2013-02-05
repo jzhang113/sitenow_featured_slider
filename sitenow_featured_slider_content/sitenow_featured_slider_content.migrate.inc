@@ -82,3 +82,14 @@ class SiteNowFeaturedSliderMigration extends Migration {
     return $columns;
   }
 }
+
+/**
+ * BatchAPI callback.
+ *
+ * @see sitenow_featured_slider_content_install()
+ */
+function _sitenow_featured_slider_content_import($operation, $type, &$context) {
+  $context['message'] = t('@operation', array('@operation' => $type));
+  $migration =  Migration::getInstance($operation);
+  $migration->processImport();
+}
