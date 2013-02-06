@@ -9,7 +9,6 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
 dependencies[] = link
-dependencies[] = migrate
 dependencies[] = manualcrop
 dependencies[] = options
 dependencies[] = override_node_options
