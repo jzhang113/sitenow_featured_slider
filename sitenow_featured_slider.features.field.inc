@@ -108,7 +108,7 @@ function sitenow_featured_slider_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '2',
+        'weight' => '1',
       ),
     ),
   );
@@ -147,7 +147,7 @@ function sitenow_featured_slider_field_default_fields() {
       'bundle' => 'featured_slider',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Provide a URL for this content to link to.',
+      'description' => 'Provide a URL for this content to link to. The title will be the text displayed for your link.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -166,7 +166,7 @@ function sitenow_featured_slider_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_featured_slider_link',
       'label' => 'Link',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'attributes' => array(
           'class' => '',
@@ -179,7 +179,8 @@ function sitenow_featured_slider_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
-        'title' => 'none',
+        'rel_remove' => 'default',
+        'title' => 'required',
         'title_maxlength' => '128',
         'title_value' => '',
         'url' => 0,
@@ -191,16 +192,87 @@ function sitenow_featured_slider_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '31',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-featured_slider-field_slider_description'.
+  $fields['node-featured_slider-field_slider_description'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_slider_description',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '200',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'featured_slider',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Enter a description for you featured image. This field is limited to a maximum of 200 characters.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 3,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_slider_description',
+      'label' => 'Description',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '180',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '2',
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Description');
+  t('Enter a description for you featured image. This field is limited to a maximum of 200 characters.');
   t('Image');
   t('Link');
-  t('Provide a URL for this content to link to.');
+  t('Provide a URL for this content to link to. The title will be the text displayed for your link.');
   t('Upload an image to display on the Featured Slider');
 
   return $fields;

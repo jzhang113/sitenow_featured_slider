@@ -77,7 +77,7 @@ function sitenow_featured_slider_node_info() {
     'featured_slider' => array(
       'name' => t('Featured Slider'),
       'base' => 'node_content',
-      'description' => t('Adds items to the <strong><em>Featured Slider</em></strong>'),
+      'description' => t('Use <strong><em>Featured Slider</em></strong> to showcase images in a slideshow.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
