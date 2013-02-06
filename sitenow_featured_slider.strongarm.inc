@@ -14,7 +14,7 @@ function sitenow_featured_slider_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_featured_slider';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-auto-nodetitle';
   $export['additional_settings__active_tab_featured_slider'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -75,10 +75,10 @@ function sitenow_featured_slider_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '30',
+          'weight' => '4',
         ),
       ),
       'display' => array(),
