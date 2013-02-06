@@ -12,7 +12,6 @@ dependencies[] = flexslider_views_slideshow
 dependencies[] = image
 dependencies[] = link
 dependencies[] = manualcrop
-dependencies[] = migrate
 dependencies[] = node
 dependencies[] = override_node_options
 dependencies[] = strongarm
