@@ -80,7 +80,6 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['fields']['field_featured_slider_image']['table'] = 'field_data_field_featured_slider_image';
   $handler->display->display_options['fields']['field_featured_slider_image']['field'] = 'field_featured_slider_image';
   $handler->display->display_options['fields']['field_featured_slider_image']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_slider_image']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_featured_slider_image']['alter']['path'] = '[field_featured_slider_link]';
   $handler->display->display_options['fields']['field_featured_slider_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_slider_image']['click_sort_column'] = 'fid';
@@ -95,6 +94,7 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Description */
@@ -131,11 +131,11 @@ function sitenow_featured_slider_views_default_views() {
     'featured_slider' => 'featured_slider',
   );
 
-  /* Display: Recent Featured Items */
-  $handler = $view->new_display('panel_pane', 'Recent Featured Items', 'featured_slider_all');
+  /* Display: Featured Slider Slideshow */
+  $handler = $view->new_display('panel_pane', 'Featured Slider Slideshow', 'featured_slider_all');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Recently Featured';
-  $handler->display->display_options['display_description'] = 'Content Pane of most recent featured items';
+  $handler->display->display_options['title'] = 'Featured Content';
+  $handler->display->display_options['display_description'] = 'Slideshow of featured slider content';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -160,9 +160,10 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['filters']['promote']['value'] = '1';
   $handler->display->display_options['filters']['promote']['exposed'] = TRUE;
   $handler->display->display_options['filters']['promote']['expose']['operator_id'] = '';
-  $handler->display->display_options['filters']['promote']['expose']['label'] = 'Promoted to front page';
+  $handler->display->display_options['filters']['promote']['expose']['label'] = 'Only show items that have been Promoted to front page';
   $handler->display->display_options['filters']['promote']['expose']['operator'] = 'promote_op';
   $handler->display->display_options['filters']['promote']['expose']['identifier'] = 'promote';
+  $handler->display->display_options['filters']['promote']['expose']['required'] = TRUE;
   $handler->display->display_options['filters']['promote']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
@@ -170,8 +171,8 @@ function sitenow_featured_slider_views_default_views() {
     5 => 0,
     3 => 0,
   );
-  $handler->display->display_options['pane_title'] = 'Recent Featured Items';
-  $handler->display->display_options['pane_description'] = 'Recent Featured Items, by post date';
+  $handler->display->display_options['pane_title'] = 'Featured Slider Slideshow';
+  $handler->display->display_options['pane_description'] = 'Slideshow of featured slider content';
   $handler->display->display_options['pane_category']['name'] = 'Featured Slider';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
@@ -182,7 +183,7 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['allow']['path_override'] = 0;
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
-  $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 'fields_override';
   $export['featured_slider'] = $view;
 
   return $export;

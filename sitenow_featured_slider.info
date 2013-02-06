@@ -16,6 +16,7 @@ dependencies[] = migrate
 dependencies[] = node
 dependencies[] = override_node_options
 dependencies[] = strongarm
+dependencies[] = text
 dependencies[] = views
 dependencies[] = views_content
 dependencies[] = views_slideshow
