@@ -80,7 +80,7 @@ function sitenow_featured_slider_node_info() {
       'description' => t('Use <em>Slideshow images</em> to promote items in a rotating slideshow. These images can link to external or internal sources.'),
       'has_title' => '1',
       'title_label' => t('Title'),
-      'help' => t('The title of this <em>Slideshow image</em> will be used as the link, if the link field is set. The link will be overlaid on the bottom of the image along with the description field. See the <a href="/admin/apps/sitenow/sitenow_featured_slider/configure">demo content</a> for an example.'),
+      'help' => t('The title of the <em>Slideshow image</em> will be used as the link text, if the link field is set. The title will be overlaid on the bottom of the image along with the description field. See the <a href="/admin/apps/sitenow/sitenow_featured_slider/configure">demo content</a> for an example.'),
     ),
   );
   return $items;
