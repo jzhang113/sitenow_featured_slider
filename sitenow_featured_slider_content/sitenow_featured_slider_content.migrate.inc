@@ -50,7 +50,11 @@ class SiteNowFeaturedSliderMigration extends Migration {
 
     // Bring on the field mappings
     $this->addFieldMapping('title', 'title');
+    $this->addFieldMapping('field_slider_description', 'description');
     $this->addFieldMapping('field_featured_slider_link', 'link');
+
+    // And we map the alt and title values in the database to those on the image.
+    $this->addFieldMapping('field_featured_slider_link:title', 'link_title');
 
     // Copy an image file, write DB record to files table, and save in Field storage.
     // We map the filename (relative to the source_dir below) to the field itself.
@@ -75,10 +79,12 @@ class SiteNowFeaturedSliderMigration extends Migration {
     // Title", "Link", "Image"
     $columns[0] = array('nid', 'nid');
     $columns[1] = array('title', 'Title');
-    $columns[2] = array('link', 'Link');
-    $columns[3] = array('image', 'Image');
-    $columns[4] = array('image_alt', 'Image Alt');
-    $columns[5] = array('image_title', 'Image Title');
+    $columns[2] = array('description', 'Description');
+    $columns[3] = array('link', 'Link');
+    $columns[4] = array('link_title', 'Link Title');
+    $columns[5] = array('image', 'Image');
+    $columns[6] = array('image_alt', 'Image Alt');
+    $columns[7] = array('image_title', 'Image Title');
     return $columns;
   }
 }
