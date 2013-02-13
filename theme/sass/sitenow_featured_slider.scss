@@ -9,8 +9,18 @@
  * - styles related for basic theming of sitenow_featured_slider. Color and other customizations should take place at a higher level
  */
 
+// defualt style overrides
+.flexslider {
+  background: transparent;
+  border: none;
+}
+
 .view-featured-slider {
 	img {
 		width: 100%;
 	}
+
+  h3 {
+    margin-bottom: 0;
+  }
 }

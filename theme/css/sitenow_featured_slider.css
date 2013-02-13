@@ -4,7 +4,17 @@
  *
  * - styles related for basic theming of sitenow_featured_slider. Color and other customizations should take place at a higher level
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sitenow_standard\/sites\/all\/modules\/features\/sitenow_featured_slider\/theme\/sass\/sitenow_featured_slider\.scss}line{font-family:\0000313}}
+/* line 13, ../sass/sitenow_featured_slider.scss */
+.flexslider {
+  background: transparent;
+  border: none;
+}
+
+/* line 19, ../sass/sitenow_featured_slider.scss */
 .view-featured-slider img {
   width: 100%;
+}
+/* line 23, ../sass/sitenow_featured_slider.scss */
+.view-featured-slider h3 {
+  margin-bottom: 0;
 }
