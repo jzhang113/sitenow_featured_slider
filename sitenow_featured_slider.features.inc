@@ -41,12 +41,12 @@ function sitenow_featured_slider_image_default_styles() {
         'module' => 'manualcrop',
         'name' => 'manualcrop_crop',
         'data' => array(
-          'width' => '700',
-          'height' => '250',
+          'width' => 700,
+          'height' => 250,
           'keepproportions' => 1,
           'style_name' => 'featured_slider',
         ),
-        'weight' => '0',
+        'weight' => 0,
       ),
       3 => array(
         'label' => 'Scale and crop',
@@ -58,10 +58,10 @@ function sitenow_featured_slider_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '700',
-          'height' => '250',
+          'width' => 700,
+          'height' => 250,
         ),
-        'weight' => '2',
+        'weight' => 2,
       ),
     ),
   );
