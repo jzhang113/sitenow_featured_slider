@@ -4,30 +4,3 @@
  *
  * - styles related for basic theming of sitenow_featured_slider. Color and other customizations should take place at a higher level
  */
-/* line 13, ../sass/sitenow_featured_slider.scss */
-.flexslider {
-  background: transparent;
-  border: none;
-}
-
-/* line 19, ../sass/sitenow_featured_slider.scss */
-.view-featured-slider img {
-  width: 100%;
-}
-/* line 23, ../sass/sitenow_featured_slider.scss */
-.view-featured-slider h3 {
-  margin-bottom: 0;
-}
-/* line 27, ../sass/sitenow_featured_slider.scss */
-.view-featured-slider .flex-control-nav li a {
-  color: #b4afa7;
-  margin: 0 .2em;
-  background: #847d71;
-  -webkit-box-shadow: 0px 1px 0px #c0bcb5, 0px 0px 3px #4d4942 inset;
-  -moz-box-shadow: 0px 1px 0px #c0bcb5, 0px 0px 3px #4d4942 inset;
-  box-shadow: 0px 1px 0px #c0bcb5, 0px 0px 3px #4d4942 inset;
-}
-/* line 33, ../sass/sitenow_featured_slider.scss */
-.view-featured-slider .flex-control-nav li a.flex-active {
-  background: #24221f;
-}
