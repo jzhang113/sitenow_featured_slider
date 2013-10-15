@@ -22,7 +22,7 @@ function sitenow_featured_slider_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'large',
+          'image_style' => 'featured_slider',
         ),
         'type' => 'image',
         'weight' => 0,
