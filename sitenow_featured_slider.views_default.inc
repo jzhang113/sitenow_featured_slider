@@ -82,9 +82,9 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['fields']['field_featured_slider_image']['alter']['path'] = '[field_featured_slider_link]';
   $handler->display->display_options['fields']['field_featured_slider_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_slider_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_featured_slider_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_featured_slider_image']['settings'] = array(
-    'image_style' => 'featured_slider',
-    'image_link' => '',
+    'file_view_mode' => 'featured_slider_700x250',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
