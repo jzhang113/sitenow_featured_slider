@@ -82,33 +82,39 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['fields']['field_featured_slider_image']['alter']['path'] = '[field_featured_slider_link]';
   $handler->display->display_options['fields']['field_featured_slider_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_slider_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_featured_slider_image']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_featured_slider_image']['settings'] = array(
-    'file_view_mode' => 'featured_slider_700x250',
+    'image_style' => 'featured_slider',
+    'image_link' => '',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Description */
   $handler->display->display_options['fields']['field_slider_description']['id'] = 'field_slider_description';
   $handler->display->display_options['fields']['field_slider_description']['table'] = 'field_data_field_slider_description';
   $handler->display->display_options['fields']['field_slider_description']['field'] = 'field_slider_description';
   $handler->display->display_options['fields']['field_slider_description']['label'] = '';
+  $handler->display->display_options['fields']['field_slider_description']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_slider_description']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_featured_slider_link']['id'] = 'field_featured_slider_link';
   $handler->display->display_options['fields']['field_featured_slider_link']['table'] = 'field_data_field_featured_slider_link';
   $handler->display->display_options['fields']['field_featured_slider_link']['field'] = 'field_featured_slider_link';
   $handler->display->display_options['fields']['field_featured_slider_link']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_slider_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_slider_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_slider_link']['click_sort_column'] = 'url';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<span class="views-field-slideshow-title">[title]</span>
+<span class="views-field-slideshow-description">[field_slider_description]</span>
+<span class="views-field-slideshow-link">[field_featured_slider_link]</span>
+';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -182,7 +188,7 @@ function sitenow_featured_slider_views_default_views() {
   $handler->display->display_options['allow']['path_override'] = 0;
   $handler->display->display_options['allow']['title_override'] = 'title_override';
   $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
-  $handler->display->display_options['allow']['fields_override'] = 'fields_override';
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $export['featured_slider'] = $view;
 
   return $export;
