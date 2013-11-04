@@ -21,7 +21,7 @@ function sitenow_featured_slider_apps_app_configure_form($form, &$form_state) {
 /*
  * Implements hook_form_FORM_ID_alter().
  */
-function sitenow_featured_slider_apps_demo_content_form_alter(&$form, &$form_state, $form_id) {
+function sitenow_featured_slider_form_apps_demo_content_form_alter(&$form, &$form_state, $form_id) {
   $app = $form['app']['#value']['machine_name'];
   if ($app === 'sitenow_featured_slider') {
     // If the SiteNowFeaturedSlider migration has run and the sitenow_featured_slider_content
