@@ -10,6 +10,43 @@
 function sitenow_featured_slider_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-featured_slider-field_featured_slider_category'
+  $field_instances['node-featured_slider-field_featured_slider_category'] = array(
+    'bundle' => 'featured_slider',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This a reference to the <a href="/admin/structure/taxonomy/slideshow_image_category">slideshow image category taxonomy</a>. You can add terms to that vocabulary and they will appear as a drop-down list. This allows you to create slideshows with images from a selected category. Only webmasters have permission to edit taxonomies. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_featured_slider_category',
+    'label' => 'Category',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-featured_slider-field_featured_slider_image'
   $field_instances['node-featured_slider-field_featured_slider_image'] = array(
     'bundle' => 'featured_slider',
@@ -193,11 +230,13 @@ function sitenow_featured_slider_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Category');
   t('Description');
   t('Enter a description for you featured image. This field is limited to a maximum of 200 characters.');
   t('Image');
   t('Link');
   t('Provide a URL for this content to link to. The title will be the text displayed for your link.');
+  t('This a reference to the <a href="/admin/structure/taxonomy/slideshow_image_category">slideshow image category taxonomy</a>. You can add terms to that vocabulary and they will appear as a drop-down list. This allows you to create slideshows with images from a selected category. Only webmasters have permission to edit taxonomies. ');
   t('Upload an image to display on the Featured Slider');
 
   return $field_instances;

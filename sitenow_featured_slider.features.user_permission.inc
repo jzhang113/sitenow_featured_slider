@@ -43,6 +43,16 @@ function sitenow_featured_slider_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in slideshow_image_category'.
+  $permissions['delete terms in slideshow_image_category'] = array(
+    'name' => 'delete terms in slideshow_image_category',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any featured_slider content'.
   $permissions['edit any featured_slider content'] = array(
     'name' => 'edit any featured_slider content',
@@ -63,6 +73,16 @@ function sitenow_featured_slider_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in slideshow_image_category'.
+  $permissions['edit terms in slideshow_image_category'] = array(
+    'name' => 'edit terms in slideshow_image_category',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'enter featured_slider revision log entry'.
