@@ -34,7 +34,7 @@ function sitenow_featured_slider_image_default_styles() {
     'name' => 'featured_slider',
     'label' => 'Featured Slider (700x250)',
     'effects' => array(
-      11 => array(
+      1 => array(
         'label' => 'Crop and scale manually',
         'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
         'effect callback' => 'manualcrop_crop_and_scale_effect',
@@ -44,8 +44,8 @@ function sitenow_featured_slider_image_default_styles() {
         'module' => 'manualcrop',
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
-          'width' => 700,
-          'height' => 250,
+          'width' => 1250,
+          'height' => 446,
           'upscale' => 1,
           'respectminimum' => 1,
           'onlyscaleifcrop' => 0,
@@ -53,7 +53,7 @@ function sitenow_featured_slider_image_default_styles() {
         ),
         'weight' => 1,
       ),
-      10 => array(
+      2 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -63,8 +63,8 @@ function sitenow_featured_slider_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 700,
-          'height' => 250,
+          'width' => 1250,
+          'height' => 446,
         ),
         'weight' => 2,
       ),
