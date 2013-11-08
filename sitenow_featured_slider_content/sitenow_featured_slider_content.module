@@ -11,7 +11,7 @@
 * disable edit and deletion of demo content.
 */
 
-function sitenow_featured_slider_content_form_event_node_form_alter(&$form, &$form_state, $form_id) {
+function sitenow_featured_slider_content_form_featured_slider_node_form_alter(&$form, &$form_state, $form_id) {
   // check to see if this is add form or edit form
   if(isset($form['nid']['#value'])) {
     // call custom function to see if node has been migrated
