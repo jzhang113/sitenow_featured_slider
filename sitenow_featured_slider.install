@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ *
+ * Install and uninstall tasks for SiteNow Featured Slider
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function sitenow_featured_slider_enable() {
+  // Revert the sitenow_featured_slider feature.
+  $feature = features_get_features('sitenow_featured_slider');
+  $components = array_keys($feature->info['features']);
+  features_revert(array('sitenow_featured_slider' => $components));
+}
+
+/**
+ * Implements hook_disable().
+ */
+function sitenow_featured_slider_disable() {
+  // Gather all the content that might have been created while this
+  // module was enabled. Simple selects still use db_query().
+  $sql = 'SELECT nid FROM {node} n WHERE n.type = :type';
+  $result = db_query($sql, array(':type' => 'featured_slider'));
+  $nids = array();
+  foreach ($result as $row) {
+    $nids[] = $row->nid;
+  }
+
+  // Delete all the nodes at once.
+  node_delete_multiple($nids);
+
+  // Loop over each of the fields used by only the featured_slider content type and delete
+  // all instances of the field, their data, and the field itself.
+  foreach (field_info_field_map() as $field_name => $field_info) {
+    if (array_key_exists('node', $field_info['bundles'])) {
+      if (in_array('featured_slider', $field_info['bundles']['node'])) {        
+        if (count($field_info['bundles']['node'] == 1)) {
+          field_delete_field($field_name);
+        }
+      }
+    }
+  }
+
+  // Loop over any remaining field instances attached to the featured_slider content type
+  // and delete them individually.
+  $instances = field_info_instances('node', 'featured_slider');
+  foreach ($instances as $instance_name => $instance) {
+    field_delete_instance($instance);
+  }
+
+  // Delete the featured_slider content type.
+  node_type_delete('featured_slider');
+
+  // Delete the slideshow_image_category taxonomy.
+  $vid = db_query("SELECT vid FROM {taxonomy_vocabulary} WHERE machine_name = 'slideshow_image_category'")->fetchField();
+  taxonomy_vocabulary_delete($vid);
+
+  // Purge all field information.
+  field_purge_batch(1000);
+}
