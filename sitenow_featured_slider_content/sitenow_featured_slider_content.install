@@ -27,6 +27,8 @@ function sitenow_featured_slider_content_disable() {
   foreach ($classes as $class) {
     $migration = Migration::getInstance($class);
     $migration->processRollback();
+
+    Migration::deregisterMigration($class);
   }
   // Remove messages set by migrate module.
   drupal_get_messages('completed');
