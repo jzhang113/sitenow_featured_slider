@@ -52,7 +52,8 @@ function sitenow_featured_slider_field_default_field_instances() {
     'bundle' => 'featured_slider',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Upload an image to display on the Featured Slider',
+    'description' => 'Upload an image to display on the Featured Slider.<br>
+Suggested minimum dimensions for an uploaded image are 1250x446 pixels.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -237,7 +238,8 @@ function sitenow_featured_slider_field_default_field_instances() {
   t('Link');
   t('Provide a URL for this content to link to. The title will be the text displayed for your link.');
   t('This a reference to the <a href="/admin/structure/taxonomy/slideshow_image_category">slideshow image category taxonomy</a>. You can add terms to that vocabulary and they will appear as a drop-down list. This allows you to create slideshows with images from a selected category. Only webmasters have permission to edit taxonomies. ');
-  t('Upload an image to display on the Featured Slider');
+  t('Upload an image to display on the Featured Slider.<br>
+Suggested minimum dimensions for an uploaded image are 1250x446 pixels.');
 
   return $field_instances;
 }
