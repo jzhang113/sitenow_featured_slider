@@ -14,7 +14,7 @@ function sitenow_featured_slider_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_featured_slider';
-  $strongarm->value = 'edit-auto-nodetitle';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_featured_slider'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -125,6 +125,7 @@ function sitenow_featured_slider_strongarm() {
   $strongarm->name = 'node_options_featured_slider';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'revision',
   );
   $export['node_options_featured_slider'] = $strongarm;
 
@@ -134,6 +135,20 @@ function sitenow_featured_slider_strongarm() {
   $strongarm->name = 'node_preview_featured_slider';
   $strongarm->value = '1';
   $export['node_preview_featured_slider'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_number_featured_slider';
+  $strongarm->value = '5';
+  $export['node_revision_delete_number_featured_slider'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_revision_delete_track_featured_slider';
+  $strongarm->value = 1;
+  $export['node_revision_delete_track_featured_slider'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
