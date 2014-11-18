@@ -161,6 +161,7 @@ Suggested minimum dimensions for an uploaded image are 1250 (width) x 446 (heigh
     'label' => 'Link',
     'required' => 0,
     'settings' => array(
+      'absolute_url' => 1,
       'attributes' => array(
         'class' => '',
         'configurable_title' => 0,
@@ -174,6 +175,7 @@ Suggested minimum dimensions for an uploaded image are 1250 (width) x 446 (heigh
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'required',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
