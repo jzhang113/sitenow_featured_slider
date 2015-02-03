@@ -11,9 +11,6 @@
 function sitenow_featured_slider_content_migrate_api() {
   $api = array(
     'api' => 2,
-    'migrations' => array(
-      'SiteNowFeaturedSlider' => array('class_name' => 'SiteNowFeaturedSliderMigration'),
-    ),
   );
   return $api;
 }
@@ -23,8 +20,8 @@ function sitenow_featured_slider_content_migrate_api() {
 // could then be extended by each app.
 class SiteNowFeaturedSliderMigration extends Migration {
 
-  public function __construct() {
-    parent::__construct(MigrateGroup::getInstance('SiteNow'));
+  public function __construct($arguments) {
+    parent::__construct($arguments);
 
     // Avoid known line ending issue: drupal.org/node/1705850
     ini_set('auto_detect_line_endings', TRUE);
