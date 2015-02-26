@@ -34,11 +34,10 @@ function sitenow_featured_slider_image_default_styles() {
     'name' => 'featured_slider',
     'label' => 'Featured Slider (700x250)',
     'effects' => array(
-      1 => array(
-        'label' => 'Crop and scale manually',
+      13 => array(
+        'label' => 'Manual Crop: Crop and scale',
         'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
         'effect callback' => 'manualcrop_crop_and_scale_effect',
-        'dimensions callback' => 'image_resize_dimensions',
         'form callback' => 'manualcrop_crop_and_scale_form',
         'summary theme' => 'manualcrop_crop_and_scale_summary',
         'module' => 'manualcrop',
@@ -48,12 +47,12 @@ function sitenow_featured_slider_image_default_styles() {
           'height' => 446,
           'upscale' => 1,
           'respectminimum' => 1,
-          'onlyscaleifcrop' => 0,
+          'onlyscaleifcrop' => 1,
           'style_name' => 'featured_slider',
         ),
         'weight' => 1,
       ),
-      2 => array(
+      14 => array(
         'label' => 'Scale and crop',
         'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
         'effect callback' => 'image_scale_and_crop_effect',
@@ -88,5 +87,6 @@ function sitenow_featured_slider_node_info() {
       'help' => t('The title of the <em>Slideshow image</em> will be used as the link text, if the link field is set. The title will be overlaid on the bottom of the image along with the description field. See the <a href="/admin/apps/local/sitenow_featured_slider/configure">demo content</a> for an example.'),
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
