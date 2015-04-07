@@ -122,9 +122,7 @@ Suggested minimum dimensions for an uploaded image are 1250 (width) x 446 (heigh
         'manualcrop_instant_preview' => 0,
         'manualcrop_keyboard' => TRUE,
         'manualcrop_maximize_default_crop_area' => FALSE,
-        'manualcrop_require_cropping' => array(
-          'featured_slider' => 0,
-        ),
+        'manualcrop_require_cropping' => array(),
         'manualcrop_styles_list' => array(
           'featured_slider' => 'featured_slider',
         ),
